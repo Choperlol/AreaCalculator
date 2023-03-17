@@ -70,14 +70,9 @@ namespace AreaCalculator.Core
         /// <returns>The double value of area.</returns>
         public double GetArea()
         {
-            if (IsRectangularTriangle(SideA, SideB, SideC))
-            {
-                return CalculateRectangularTriangleArea(SideA, SideB, SideC);
-            }
-            else
-            {
-                return CalculateNonRectangularTriangleArea(SideA, SideB, SideC);
-            }
+            return IsRectangularTriangle(SideA, SideB, SideC)
+                ? CalculateRectangularTriangleArea(SideA, SideB, SideC)
+                : CalculateNonRectangularTriangleArea(SideA, SideB, SideC);
         }
 
         private bool IsRectangularTriangle(double sideA, double sideB, double sideC)

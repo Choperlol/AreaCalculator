@@ -14,7 +14,6 @@ namespace AreaCalculatorTests
                 Assert.Throws<InvalidRaduisException>(() => { IGeometricFigure figure = new Circle(-2.543); });
                 Assert.Throws<InvalidRaduisException>(() => { IGeometricFigure figure = new Circle(0); });
             });
-
         }
 
         [Test]

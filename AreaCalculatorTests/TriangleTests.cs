@@ -23,7 +23,6 @@ namespace AreaCalculatorTests
                 Assert.Throws<InvalidSideException>(() => { IGeometricFigure figure = new Triangle(54, 2, -10); });
                 Assert.Throws<InvalidSideException>(() => { IGeometricFigure figure = new Triangle(32, 12, 0); });
             });
-
         }
 
         [Test]
@@ -36,7 +35,6 @@ namespace AreaCalculatorTests
                 Assert.Throws<InvalidTriangleException>(() => { IGeometricFigure figure = new Triangle(23.2, 1.234, 30.33); });
                 Assert.Throws<InvalidTriangleException>(() => { IGeometricFigure figure = new Triangle(10, 10, 20); });
             });
-
         }
 
         [Test]
@@ -65,7 +63,6 @@ namespace AreaCalculatorTests
                 Assert.That(figure1.IsRectangular, Is.EqualTo(true));
                 Assert.That(figure2.IsRectangular, Is.EqualTo(false));
             });
-
         }
     }
 }
